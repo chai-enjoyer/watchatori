@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchatori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/82/a4/75/82a47526700b03819887b377c6c97818.jpg');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: #10b0d0;
+            color: rgb(29, 29, 29);
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .video-player {
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+        .episode-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .episode {
+            background-color: #ecf0f1;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .episode:hover {
+            background-color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>OnePiece</h1>
+</header>
+
+<div class="container">
+    <div class="video-player">
+        <video id="anime-video" controls>
+            <source id="video-source" src="https://r260102.anilibria.one/onepiece/1.1080.b7759fb3992d9b4a.mp4?hash1=bd73d59dc8cbb9137dc55feb9ad3e341&hash2=b06ab8038fdbc990788f04cd39c7ca50" type="video/mp4">
+        </video>
+    </div>
+
+    <h2>Эпизоды</h2>
+    <div class="episode-list">
+        <div class="episode" data-video="https://r260102.anilibria.one/onepiece/1.1080.b7759fb3992d9b4a.mp4?hash1=bd73d59dc8cbb9137dc55feb9ad3e341&hash2=b06ab8038fdbc990788f04cd39c7ca50">Эпизод 1</div>
+        <div class="episode" data-video="https://r260102.anilibria.one/onepiece/2.1080.74ae51fa3feb49ae.mp4?hash1=29e61b6a8ab8a7a6c0bc77d652c005e1&hash2=7a321a5b692cb9d1f061e4156feefc05">Эпизод 2</div>
+        <div class="episode" data-video="https://r260102.anilibria.one/onepiece/3.1080.58267f5a5b8533cb.mp4?hash1=ea10f7f95a8ac072ba33ebdcd8f01bca&hash2=3f104c01dd14fec7f142394cc8045888">Эпизод 3</div>
+    </div>
+</div>
+
+<script>
+    const episodes = document.querySelectorAll('.episode');
+    const videoPlayer = document.getElementById('anime-video');
+    const videoSource = document.getElementById('video-source');
+    
+    episodes.forEach(episode => {
+        episode.addEventListener('click', function() {
+            const videoUrl = this.getAttribute('data-video');
+            videoSource.src = videoUrl;
+            videoPlayer.load();
+            videoPlayer.play();
+        });
+    });
+</script>
+
+</body>
+</html>

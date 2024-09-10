@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchatori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.ytimg.com/vi/4ZF-tvXAQuo/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: #f6ee0d;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .video-player {
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+        .episode-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .episode {
+            background-color: #ecf0f1;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .episode:hover {
+            background-color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chainsaw Man</h1>
+</header>
+
+<div class="container">
+    <div class="video-player">
+        <video id="anime-video" controls>
+            <source id="video-source" src="https://r260102.anilibria.one/spy-family/1.1080.fa1fac0e5ea9157d.mp4?hash1=11de059fb0f0174c9a824e958174506c&hash2=1ce8924a83b5b95e59b95a97244ab2f1" type="video/mp4">
+        </video>
+    </div>
+
+    <h2>Эпизоды</h2>
+    <div class="episode-list">
+        <div class="episode" data-video="https://r260102.anilibria.one/spy-family/1.1080.fa1fac0e5ea9157d.mp4?hash1=11de059fb0f0174c9a824e958174506c&hash2=1ce8924a83b5b95e59b95a97244ab2f1">Эпизод 1</div>
+        <div class="episode" data-video="https://r260102.anilibria.one/spy-family/2.1080.5d43e8e2546fe38a.mp4?hash1=1960c2ab5371e8c1f7747a12c0dc7705&hash2=3a470da0dae640cb79aefa269401bc6e">Эпизод 2</div>
+        <div class="episode" data-video="https://r260102.anilibria.one/spy-family/3.1080.adef6b3ee759c14f.mp4?hash1=0f0b57b2d301cefb137796a269baf006&hash2=3f993ff3e01e974731b54473848b6819">Эпизод 3</div>
+    </div>
+</div>
+
+<script>
+    const episodes = document.querySelectorAll('.episode');
+    const videoPlayer = document.getElementById('anime-video');
+    const videoSource = document.getElementById('video-source');
+    
+    episodes.forEach(episode => {
+        episode.addEventListener('click', function() {
+            const videoUrl = this.getAttribute('data-video');
+            videoSource.src = videoUrl;
+            videoPlayer.load();
+            videoPlayer.play();
+        });
+    });
+</script>
+
+</body>
+</html>
