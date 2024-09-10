@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchatori - Naruto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.wallpapersden.com/image/download/hokage-naruto-4k_bGdrbmyUmZqaraWkpJRpZW5trWdoZWk.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .video-player {
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+        .episode-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .episode {
+            background-color: #ecf0f1;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .episode:hover {
+            background-color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Naruto - Эпизоды</h1>
+</header>
+
+<div class="container">
+    <div class="video-player">
+        <video id="anime-video" controls>
+            <source id="video-source" src="https://r220109.anilibria.one/naruto/1/1.480.1f89a08c65b0c303.mp4?hash1=ead1d791b9312e595ba87b20c60204e8&hash2=7cb0dbd2ddc79225aa819e593836658f" type="video/mp4">
+        </video>
+    </div>
+
+    <h2>Эпизоды</h2>
+    <div class="episode-list">
+        <div class="episode" data-video="https://r220109.anilibria.one/naruto/1/1.480.1f89a08c65b0c303.mp4?hash1=ead1d791b9312e595ba87b20c60204e8&hash2=7cb0dbd2ddc79225aa819e593836658f">Эпизод 1</div>
+        <div class="episode" data-video="https://r220109.anilibria.one/naruto/1/2.480.f6fbc40058af276a.mp4?hash1=a054be02c8e0403c3c494f87b5fc7066&hash2=98f3853a750e8786171858f26391630e">Эпизод 2</div>
+        <div class="episode" data-video="https://r220109.anilibria.one/naruto/1/3.480.19076077e692ecfe.mp4?hash1=af4a01f79ddecf0bb8b9ea8c2a12ff91&hash2=c883138b4eb165d1c36e99d425a3f563">Эпизод 3</div>
+    </div>
+</div>
+
+<script>
+    const episodes = document.querySelectorAll('.episode');
+    const videoPlayer = document.getElementById('anime-video');
+    const videoSource = document.getElementById('video-source');
+    
+    episodes.forEach(episode => {
+        episode.addEventListener('click', function() {
+            const videoUrl = this.getAttribute('data-video');
+            videoSource.src = videoUrl;
+            videoPlayer.load();
+            videoPlayer.play();
+        });
+    });
+</script>
+
+</body>
+</html>
