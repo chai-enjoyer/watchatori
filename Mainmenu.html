@@ -4,97 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watchatori</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
-        }
-        header {
-            background-color: rgb(84, 61, 138);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .anime-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .anime-type {
-            background-color: rgb(161, 125, 253);
-            width: 200px;
-            margin: 20px;
-            border-radius: 8px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .anime-type:hover {
-            transform: scale(1.05);
-        }
-        .anime-type img {
-            width: 100%;
-            height: auto;
-        }
-        .anime-type h3 {
-            background-color: #1a1f11;
-            color: white;
-            margin: 0;
-            padding: 10px;
-        }
-        .anime-type p {
-            padding: 10px;
-            color: #2c3e50;
-        }
-        footer {
-            background-color: #1a1f11;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        footer ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        footer li {
-            display: inline;
-            margin: 0 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
 <header>
-    <h1>Выбери Аниме для просмотра</h1>
+    <h1>Watchatori - anime database</h1>
 </header>
 
 <div class="container">
     <div class="anime-list">
         <div class="anime-type" onclick="window.location.href='pages/OnePiece.html'">
-            <img src="https://i.pinimg.com/564x/8f/e5/6e/8fe56e8e498069805b90a3aeffb229cc.jpg" alt="Аниме 1">
+            <img src="images/onepiece_cover.jpg" alt="Anime_1">
             <h3>One Piece</h3>
-            <p>Приключения пиратов, дружба, мечты, сокровища, свобода.</p>
+            <p>Pirates, friendship, dreams, treasure, freedom</p>
         </div>
         <div class="anime-type" onclick="window.location.href='pages/ChainsawMan.html'">
-            <img src="https://i.pinimg.com/564x/78/22/92/782292a5f0e27c698f0caaa4683b38e8.jpg" alt="Аниме 2">
+            <img src="images/chainsawman_cover.jpg" alt="Anime_2">
             <h3>Chainsaw Man</h3>
-            <p>Мужчина с бензопилой, демоны, экшен.</p>
+            <p>Chainsaw, demons, action</p>
         </div>
         <div class="anime-type" onclick="window.location.href='pages/SPYxFamily.html'">
-            <img src="https://i.pinimg.com/564x/81/88/a1/8188a1fce5e290584822bc5689c7553d.jpg" alt="Аниме 3">
+            <img src="images/spyxfamily_cover.jpg" alt="Anime_3">
             <h3>SPYxFamily</h3>
-            <p>Шпионы, тайны, семья, комедия, приключения.</p>
+            <p>Spy, secret, family, comedy, adventure</p>
+        </div>
+        <div class="anime-type" onclick="window.location.href='pages/BlackClover.html'">
+            <img src="images/blackclover_cover.jpg" alt="Anime_4">
+            <h3>Black Clover</h3>
+            <p>Fantasy, demons, friendship, action</p>
+        </div>
+        <div class="anime-type" onclick="window.location.href='pages/Naruto.html'">
+            <img src="https://i.pinimg.com/564x/81/88/a1/8188a1fce5e290584822bc5689c7553d.jpg" alt="Anime_4">
+            <h3>Naruto</h3>
+            <p>Ninja, abilities, friendship, action</p>
         </div>
     </div>
 </div>
