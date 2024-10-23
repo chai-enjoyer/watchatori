@@ -9,15 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="scripts/formValidation.js" defer></script>
+    <script src="scripts/accordion.js" defer></script>
+    <script src="scripts/popupForm.js" defer></script>
+    <script src="scripts/changeColor.js" defer></script>
+    <script src="scripts/currentDateTime.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>Choose Anime Title</h1>
-    <button class="btn btn-primary" onclick="window.location.href='pages/faqs.html'">
-        FAQs
-    </button>
+    <h1>Watchatori</h1>
+    <input type="text" id="searchBar" onkeyup="filterAnime()" placeholder="Search for anime..." class="form-control">
+    <button class="btn" style="background-color: antiquewhite; color: black;">change color</button>
 </header>
+
+<script>
+    function filterAnime() {
+        let input = document.getElementById('searchBar').value.toLowerCase();
+        let animeItems = document.getElementsByClassName('anime-type');
+        
+        for (let i = 0; i < animeItems.length; i++) {
+            let animeTitle = animeItems[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+            if (animeTitle.includes(input)) {
+                animeItems[i].style.display = "";
+            } else {
+                animeItems[i].style.display = "none";
+            }
+        }
+    }
+</script>
 
 <div class="container">
     <div class="anime-list">
@@ -49,16 +69,45 @@
     </div>
 </div>
 
+<div id="date-time"></div>
+
 <!-- Footer section -->
 <footer>
-    <h4>SE-2321</h4>
-    <p>Team Members:</p>
-    <ul>
-        <li>Serik Nurtas</li>
-        <li>Tursumbekov Batyrkhan</li>
-        <li>Zhumabay Omar</li>
-    </ul>
+    <div class="footer-content">
+        <div class="footer-left">
+            <h4>SE-2321</h4>
+            <p>Team Members:</p>
+            <ul>
+                <li>Serik Nurtas</li>
+                <li>Tursumbekov Batyrkhan</li>
+                <li>Zhumabay Omar</li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <button class="btn btn-primary" onclick="window.location.href='pages/faqs.html'">
+                FAQs
+            </button>
+        </div>
+    </div>
 </footer>
+
+<button id="subscribeBtn" class="btn btn-primary">Subscribe</button>
+
+<div id="popupForm" class="popup-form">
+    <div class="popup-content">
+        <span id="closePopup">&times;</span>
+        <h2>Subscribe to Watchatori</h2>
+        <form id="subscribeForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>

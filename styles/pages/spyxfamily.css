@@ -76,20 +76,56 @@ video {
     
 }
 footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #10b0d0;
-    color: black;
-    text-align: center;
-    height: 100px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d8d33f;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
 }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
 footer ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 footer li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+button.btn.btn-primary {
+  margin-top: 10px;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 600px) {
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-left, .footer-right {
+      margin-bottom: 15px;
+  }
 }
