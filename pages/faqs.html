@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ - Anime Watching Website</title>
+</head>
+<body>
+
+    <div class="faq-container">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+            <h2>1. What is Anime and how can I start watching?</h2>
+            <p>Anime is a style of animation that originated in Japan and has become popular worldwide. To start watching, simply browse our collection of series and movies and click on an episode to stream it. We also have recommendations for beginners!</p>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+            <h2>2. Do I need to create an account to watch anime?</h2>
+            <p>No, you can watch anime without creating an account. However, if you create an account, you can keep track of your favorite shows, manage watchlists, and get personalized recommendations.</p>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+            <h2>3. Is the anime content available in English?</h2>
+            <p>Yes, we provide anime in both Japanese with English subtitles (subbed) and English-dubbed versions, where available. You can choose your preference when selecting an episode.</p>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+            <h2>4. Can I download episodes to watch offline?</h2>
+            <p>Currently, we do not support offline downloads. You can stream all episodes on our website as long as you have an internet connection.</p>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+            <h2>5. What do I do if the video isn't playing?</h2>
+            <p>If you encounter issues with video playback, try refreshing the page or clearing your browser’s cache. You can also check your internet connection. If the issue persists, please contact our support team.</p>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+            <h2>6. How can I request an anime that is not on the site?</h2>
+            <p>We strive to update our library regularly. If there's an anime you'd like to see, you can submit a request through our contact page, and we'll do our best to add it to our collection.</p>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+            <h2>7. Is watching anime on this website free?</h2>
+            <p>Yes, all anime available on our platform is free to watch. However, we offer a premium membership option that includes an ad-free experience and early access to new episodes.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <h4>SE-2321</h4>
+        <p>Team Members:</p>
+        <ul>
+            <li>Serik Nurtas</li>
+            <li>Tursumbekov Batyrkhan</li>
+            <li>Zhumabay Omar</li>
+        </ul>
+    </footer>
+
+    <script>
+        // JavaScript to toggle FAQ items
+        document.querySelectorAll('.faq-item h2').forEach((faqTitle) => {
+            faqTitle.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -10,55 +10,93 @@ body {
     background-position: left;
     background-repeat: no-repeat;
 }
+
 header {
     background-color: #10b0d0;
     color: rgb(29, 29, 29);
     padding: 10px;
-    text-align: center;
+    
+}
+.header-content{
+    position: relative; /* Позволяет использовать абсолютное позиционирование для заголовка */
+    height: 60px; /* Высота для удобного выравнивания */
+}
+.home-btn{
+    font-size: 12px; 
+    padding: 5px 10px;
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Центрирование как по горизонтали, так и по вертикали */
 }
 .container {
     width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 10px ;
+    padding: 30px;
 }
+
 .video-player {
     text-align: center;
 }
+
 video {
     width: 100%;
     max-width: 800px;
     margin: 20px 0;
 }
+
+.cluster{
+    background-color: white;
+    text-align: center;
+    width: 150px;
+    height: 50px auto;
+    padding: 5px; 
+    border-radius: 8px;
+    margin: 10px auto;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
 .episode-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
-.episode {
-    background-color: #ecf0f1;
-    padding: 10px;
+
+.btn{
+    
+    font-family: Montserrat !important;
+    font-size: 15px !important;
+    font-weight: bolder !important;
+    width: 100px;
+    height: 50px;
+    text-align: center;
     margin: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.episode:hover {
-    background-color: #bdc3c7;
+    padding: 15px;
+    
 }
 
 footer {
-    position: fixed;
-    left: 0;
+    position: relative;
     bottom: 0;
     width: 100%;
-    height: 100px;
     background-color: #10b0d0;
     color: black;
     text-align: center;
-    line-height: 10%;
+    height: 100px;
 }
+
 footer ul {
     list-style-type: none;
     padding: 0;
 }
+
 footer li {
     display: inline;
     margin: 0 10px;

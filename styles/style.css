@@ -1,19 +1,21 @@
 body {
+    background-color: #000000 !important;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    
 }
 header {
     background-color: #362461;
-    color: white;
+    color: rgb(252, 252, 252);
     padding: 20px;
     text-align: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .container {
     width: 80%;
@@ -40,7 +42,7 @@ header {
 }
 .anime-type img {
     width: 200px;
-    height: 300px;
+    height: 250px;
 }
 .anime-type h3 {
     background-color: #1a1f11;
