@@ -11,5 +11,5 @@ Group Members:
 * Tursumbekov Batyrkhan
 * Zhumabay Omar
 
-aaaaaaa
+Hello Nurtas
 
