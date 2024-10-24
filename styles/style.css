@@ -8,9 +8,73 @@ body {
     padding: 0;
     
 }
-.btn{
+.btn {
     background-color: #fff;
-    color: black    
+    color: black;
+}
+
+/* Стили для всплывающей формы */
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* затемнение фона */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Стили для содержимого формы */
+.popup-content {
+    background-color: #333; /* Темный фон для формы */
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Стили текста (белый текст) */
+.popup-content h2,
+.popup-content label,
+.popup-content span {
+    color: #fff; /* Белый цвет текста */
+}
+
+/* Стили крестика для закрытия */
+#closePopup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Стили полей формы */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Стили кнопки отправки */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
 }
 header {
     background-color: #362461;

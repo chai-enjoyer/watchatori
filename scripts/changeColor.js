@@ -3,22 +3,6 @@ function changeBackgroundColor() {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.backgroundColor = randomColor;
 }
-// const header=document.querySelector("header")
-// header.style.backgroundColor="black"
-// const btn = document.querySelector('.btn')
-
-// btn.addEventListener('click', (e)=>{
-//     console.log(e.target)
-//     const body = document.querySelector('header')
-//     console.log(body)
-//     if(body.classList.include('red')){
-//         body.classList.remove('red')
-//     }
-//     else{
-//         body.classList.add('red')
-//     }
-
-// })
 
 const btn = document.querySelector('.btn');
 
