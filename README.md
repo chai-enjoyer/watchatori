@@ -1,24 +1,30 @@
 <a id="readme-top"></a>
 
 
-[![Contributors][contributors-shield]][contributors-url]
+ <h2 align="center">Watchatori</h2>
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#group-members">Group Members</a></li>
+  </ol>
+</details>
 
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](images/example.png)
+ <img align="center" src="images/example.png" style="border-radius: 10px"><p align="center" style="margin-top: -15px">Screenshot</p></img>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Built With
 
-* [![HTML][HTML]][html-url]
-* [![CSS][CSS]][css-url]
-* [![Javascript][Javascript]][Javascript-url]
-
-
-# Watchatori
 
 
 ### Anime Database :tv:
@@ -30,5 +36,3 @@ Group Members:
 * Serik Nurtas
 * Tursumbekov Batyrkhan
 * Zhumabay Omar
-
-
