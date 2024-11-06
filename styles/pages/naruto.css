@@ -11,91 +11,126 @@ body {
     background-repeat: no-repeat;
 }
 header {
-    background-color: #ff6600;
-    color: white;
+    background-color: #1e0d02;
+    color: rgb(5, 4, 4);
     padding: 10px;
-    text-align: center;
+}
+.header-content{
+  position: relative; /* Позволяет использовать абсолютное позиционирование для заголовка */
+  height: 60px; /* Высота для удобного выравнивания */
+}
+.home-btn{
+  font-size: 12px; 
+  padding: 5px 10px;
+  position: absolute;
+  left: 10px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Центрирование как по горизонтали, так и по вертикали */
 }
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+  width: 80%;
+  margin: 10px ;
+  padding: 30px;
 }
+
 .video-player {
-    text-align: center;
+  text-align: center;
 }
+
 video {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+}
+
+.cluster{
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  width: 150px;
+  height: 50px auto;
+  padding: 5px; 
+  border-radius: 8px;
+  margin: 10px auto;
+}
+.btn:hover {
+  transform: scale(1.05);
 }
 .episode-list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.episode {
-    background-color: #ecf0f1;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.episode:hover {
-    background-color: #bdc3c7;
+
+.btn{
+  
+  font-family: Montserrat !important;
+  font-size: 15px !important;
+  font-weight: bolder !important;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  
 }
 
 footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #ff6600;
-    color: black;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+button.btn.btn-primary {
+  margin-top: 10px;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 600px) {
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allows wrapping on small screens */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
+      flex-direction: column;
+      text-align: center;
   }
-  
-  .footer-left {
-    text-align: left;
+
+  .footer-left, .footer-right {
+      margin-bottom: 15px;
   }
-  
-  footer ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  footer li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  .footer-right {
-    text-align: right;
-  }
-  
-  button.btn.btn-primary {
-    margin-top: 10px;
-  }
-  
-  /* Responsive behavior for smaller screens */
-  @media (max-width: 600px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-  
-    .footer-left, .footer-right {
-        margin-bottom: 15px;
-    }
-  }
-  
+}
