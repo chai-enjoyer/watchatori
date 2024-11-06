@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     background-color: #000000 !important;
     font-family: "Josefin Sans", sans-serif;
@@ -7,14 +8,19 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    
 }
+
+/* Button styling */
 .btn {
     background-color: #fff;
     color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/* Стили для всплывающей формы */
+/* Styling for the popup form */
 .popup-form {
     display: none;
     position: fixed;
@@ -22,29 +28,29 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* затемнение фона */
+    background-color: rgba(0, 0, 0, 0.8); /* dimmed background */
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
 
-/* Стили для содержимого формы */
+/* Popup content box styling */
 .popup-content {
-    background-color: #333; /* Темный фон для формы */
+    background-color: #333; /* Dark background for the form */
     padding: 20px;
     border-radius: 5px;
     width: 300px;
     text-align: center;
 }
 
-/* Стили текста (белый текст) */
+/* Text styling inside popup */
 .popup-content h2,
 .popup-content label,
 .popup-content span {
-    color: #fff; /* Белый цвет текста */
+    color: #fff; /* White text color */
 }
 
-/* Стили крестика для закрытия */
+/* Close button styling */
 #closePopup {
     position: absolute;
     top: 10px;
@@ -54,7 +60,7 @@ body {
     cursor: pointer;
 }
 
-/* Стили полей формы */
+/* Input fields for the form */
 input[type="email"],
 input[type="password"] {
     width: 100%;
@@ -64,7 +70,7 @@ input[type="password"] {
     border-radius: 3px;
 }
 
-/* Стили кнопки отправки */
+/* Success button styling */
 .btn-success {
     background-color: #28a745;
     color: white;
@@ -77,6 +83,8 @@ input[type="password"] {
 .btn-success:hover {
     background-color: #218838;
 }
+
+/* Header styling */
 header {
     background-color: #362461;
     color: rgb(252, 252, 252);
@@ -86,23 +94,33 @@ header {
     top: 0;
     z-index: 1;
 }
+
+/* Styling for the current date-time section */
 #date-time {
-    color: white; /* Цвет текста белый */
+    color: white; /* White text for date and time */
 }
-.red{
+
+/* Red background class */
+.red {
     background-color: black;
 }
+
+/* Container for the main content */
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
+
+/* Layout for the anime list */
 .anime-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/* Styling for each anime item */
 .anime-type {
     background-color: rgb(161, 125, 253);
     width: 200px;
@@ -112,23 +130,29 @@ header {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
 .anime-type:hover {
     transform: scale(1.05);
 }
+
 .anime-type img {
     width: 200px;
     height: 250px;
 }
+
 .anime-type h3 {
     background-color: #1a1f11;
     color: white;
     margin: 0;
     padding: 10px;
 }
+
 .anime-type p {
     padding: 10px;
     color: #2c3e50;
 }
+
+/* Footer styling */
 footer {
     position: relative;
     left: 0;
@@ -138,6 +162,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    margin-top: 20px; /* Space from the content above */
 }
 
 .footer-content {

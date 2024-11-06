@@ -17,75 +17,77 @@
 </head>
 <body>
 
-<header>
-    <h1>Watchatori</h1>
-    <input type="text" id="searchBar" onkeyup="filterAnime()" placeholder="Search for anime..." class="form-control">
-    <button class="btn" style="background-color: antiquewhite; color: black;">change color</button>
-</header>
+<div class="wrapper">
+    <header>
+        <h1>Watchatori</h1>
+        <input type="text" id="searchBar" onkeyup="filterAnime()" placeholder="Search for anime..." class="form-control">
+        <button class="btn" style="background-color: antiquewhite; color: black;">change color</button>
+    </header>
 
-<script>
-    function filterAnime() {
-        let input = document.getElementById('searchBar').value.toLowerCase();
-        let animeItems = document.getElementsByClassName('anime-type');
-        
-        for (let i = 0; i < animeItems.length; i++) {
-            let animeTitle = animeItems[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-            if (animeTitle.includes(input)) {
-                animeItems[i].style.display = "";
-            } else {
-                animeItems[i].style.display = "none";
+    <script>
+        function filterAnime() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let animeItems = document.getElementsByClassName('anime-type');
+            
+            for (let i = 0; i < animeItems.length; i++) {
+                let animeTitle = animeItems[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (animeTitle.includes(input)) {
+                    animeItems[i].style.display = "";
+                } else {
+                    animeItems[i].style.display = "none";
+                }
             }
         }
-    }
-</script>
+    </script>
 
-<div class="container">
-    <div class="anime-list">
-        <div class="anime-type" onclick="window.location.href='pages/OnePiece.html'">
-            <img src="images/onepiece_cover.jpg" alt="Аниме 1">
-            <h3>One Piece</h3>
-            <p>Pirates, friendship, dreams, treasure, freedom.</p>
-        </div>
-        <div class="anime-type" onclick="window.location.href='pages/ChainsawMan.html'">
-            <img src="images/chainsawman_cover.jpg" alt="Аниме 2">
-            <h3>Chainsaw Man</h3>
-            <p>Chainsaw, demons, action.</p>
-        </div>
-        <div class="anime-type" onclick="window.location.href='pages/SPYxFamily.html'">
-            <img src="images/spyxfamily_cover.jpg" alt="Аниме 3">
-            <h3>SPYxFamily</h3>
-            <p>Spy, secret, family, comedy, adventure.</p>
-        </div>
-        <div class="anime-type" onclick="window.location.href='pages/BlackClover.html'">
-            <img src="images/BlackClover.jpg" alt="Аниме 1">
-            <h3>Black Clover</h3>
-            <p>Fantasy, demons, friendship, action.</p>
-        </div>
-        <div class="anime-type" onclick="window.location.href='pages/Naruto.html'">
-            <img src="images/naruto.jpg" alt="Аниме 1">
-            <h3>Naruto</h3>
-            <p>Ninja, abilities, friendship, action.</p>
+    <div class="container">
+        <div class="anime-list">
+            <div class="anime-type" onclick="window.location.href='pages/OnePiece.html'">
+                <img src="images/onepiece_cover.jpg" alt="Аниме 1">
+                <h3>One Piece</h3>
+                <p>Pirates, friendship, dreams, treasure, freedom.</p>
+            </div>
+            <div class="anime-type" onclick="window.location.href='pages/ChainsawMan.html'">
+                <img src="images/chainsawman_cover.jpg" alt="Аниме 2">
+                <h3>Chainsaw Man</h3>
+                <p>Chainsaw, demons, action.</p>
+            </div>
+            <div class="anime-type" onclick="window.location.href='pages/SPYxFamily.html'">
+                <img src="images/spyxfamily_cover.jpg" alt="Аниме 3">
+                <h3>SPYxFamily</h3>
+                <p>Spy, secret, family, comedy, adventure.</p>
+            </div>
+            <div class="anime-type" onclick="window.location.href='pages/BlackClover.html'">
+                <img src="images/BlackClover.jpg" alt="Аниме 1">
+                <h3>Black Clover</h3>
+                <p>Fantasy, demons, friendship, action.</p>
+            </div>
+            <div class="anime-type" onclick="window.location.href='pages/Naruto.html'">
+                <img src="images/naruto.jpg" alt="Аниме 1">
+                <h3>Naruto</h3>
+                <p>Ninja, abilities, friendship, action.</p>
+            </div>
         </div>
     </div>
-</div>
 
-<div id="date-time"></div>
+    <div id="date-time"></div>
 
-<button id="subscribeBtn" class="btn btn-primary">Subscribe</button>
+    <button id="subscribeBtn" class="btn btn-primary">Subscribe</button>
 
-<div id="popupForm" class="popup-form">
-    <div class="popup-content">
-        <span id="closePopup">&times;</span>
-        <h2>Subscribe to Watchatori</h2>
-        <form id="subscribeForm">
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" required>
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" required>
-            <button type="submit" class="btn btn-success">Submit</button>
-        </form>
+    <div id="popupForm" class="popup-form">
+        <div class="popup-content">
+            <span id="closePopup">&times;</span>
+            <h2>Subscribe to Watchatori</h2>
+            <form id="subscribeForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
     </div>
 </div>
 

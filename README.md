@@ -26,7 +26,7 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## 📖 About The Project
+## About The Project
 
 Watchatori is a web-based anime database designed to offer a clean and intuitive experience for anime enthusiasts. Developed using only HTML, CSS, and JavaScript, it showcases the power of barebones web development. 🌐
 
@@ -36,7 +36,7 @@ Watchatori is a web-based anime database designed to offer a clean and intuitive
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SCREENSHOTS -->
-## 📸 Screenshots
+## Screenshots
 
 <p align="center">
   <img src="images/example.png" alt="Screenshot" width="80%" style="border-radius: 10px;">
@@ -53,7 +53,7 @@ Watchatori is a web-based anime database designed to offer a clean and intuitive
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GROUP MEMBERS -->
-## 👥 Group Members
+## Group Members
 
 This project is collaboratively developed by:
 - **Serik Nurtas** 🎨
@@ -65,7 +65,7 @@ Together, we’re building a platform to bring anime lovers the information they
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
-## 🤝 Contributing
+## Contributing
 
 As of now, contributions are limited to the project team. If you have any feedback, ideas, or suggestions, feel free to reach out to one of the group members directly. We’d love to hear from you! 😊
 
