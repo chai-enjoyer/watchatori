@@ -1,12 +1,12 @@
 <a id="readme-top"></a>
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT TITLE -->
 <br />
 <div align="center">
-  <h2 align="center">Watchatori</h2>
+  <h2 align="center">📺 Watchatori</h2>
 
   <p align="center">
-    A simple yet growing anime database.
+    Your go-to anime database! 🌸
     <br />
     <a href="https://github.com/chai-enjoyer/watchatori"><strong>Explore the docs »</strong></a>
     <br />
@@ -16,45 +16,57 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>🗂️ Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#group-members">Group Members</a></li>
+    <li><a href="#about-the-project">📖 About The Project</a></li>
+    <li><a href="#screenshots">📸 Screenshots</a></li>
+    <li><a href="#group-members">👥 Group Members</a></li>
+    <li><a href="#contributing">🤝 Contributing</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## 📖 About The Project
 
-<p align="center">
-  <img align="center" src="images/example.png" alt="Screenshot" style="border-radius: 10px;">
-  <br />
-  <p align="center" style="margin-top: -15px;">Screenshot</p>
-</p>
-
-Watchatori is a web-based anime database designed to provide a sleek and simple interface for browsing anime information. This project is developed using only HTML, CSS, and JavaScript.
+Watchatori is a web-based anime database designed to offer a clean and intuitive experience for anime enthusiasts. Developed using only HTML, CSS, and JavaScript, it showcases the power of barebones web development. 🌐
 
 > **Note**
-> This project is currently in development, and additional features and data will be added over time.
+> This project is currently in development. We’re excited to add more features soon! 💻
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SCREENSHOTS -->
+## 📸 Screenshots
+
+<p align="center">
+  <img src="images/example.png" alt="Screenshot" width="80%" style="border-radius: 10px;">
+  <br />
+  <i>Main interface screenshot</i>
+</p>
+
+<p align="center">
+  <img src="images/search_example.png" alt="Search Screenshot" width="80%" style="border-radius: 10px;">
+  <br />
+  <i>Anime search functionality</i>
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GROUP MEMBERS -->
-## Group Members
+## 👥 Group Members
 
-The Watchatori project is collaboratively developed by:
-* Serik Nurtas
-* Tursumbekov Batyrkhan
-* Zhumabay Omar
+This project is collaboratively developed by:
+- **Serik Nurtas** 🎨
+- **Tursumbekov Batyrkhan** 🧑‍💻
+- **Zhumabay Omar** 🔧
+
+Together, we’re building a platform to bring anime lovers the information they need in one place! 🌟
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
-## Contributing
+## 🤝 Contributing
 
-Contributions are currently limited to the group members. For any suggestions or feedback, please reach out directly.
+As of now, contributions are limited to the project team. If you have any feedback, ideas, or suggestions, feel free to reach out to one of the group members directly. We’d love to hear from you! 😊
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
